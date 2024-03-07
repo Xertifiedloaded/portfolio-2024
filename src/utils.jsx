@@ -5,69 +5,69 @@ import tweet from "./assets/twitter.svg";
 import linkedin from "./assets/linkedin.svg";
 import sms from "./assets/email.svg";
 import github from "./assets/github.svg";
-import abgAdmin from './assets/abg-admin.png'
-import pdf from './assets/Updated CV 2024.pdf'
+import abgAdmin from "./assets/abg-admin.png";
+import pdf from "./assets/Updated CV 2024.pdf";
 export const projectsData = [
   {
-    id:1,
-    github:"",
-    url:"",
+    id: 1,
+    github: "",
+    url: "",
     project: "Department of Animal Breeding And Genetics",
     image: abgAdmin,
   },
   {
-    id:2,
-    github:"",
-    url:"",
+    id: 2,
+    github: "",
+    url: "",
     project: "Department of Animal Breeding And Genetics",
     image: abgAdmin,
   },
   {
-    id:3,
-    github:"",
-    url:"",
+    id: 3,
+    github: "",
+    url: "",
     project: "Department of Animal Breeding And Genetics",
     image: abgAdmin,
   },
   {
-    id:4,
-    github:"",
-    url:"",
+    id: 4,
+    github: "",
+    url: "",
     project: "Department of Animal Breeding And Genetics",
     image: abgAdmin,
   },
   {
-    id:5,
-    github:"",
-    url:"",
+    id: 5,
+    github: "",
+    url: "",
     project: "Department of Animal Breeding And Genetics",
     image: abgAdmin,
   },
   {
-    id:6,
-    github:"",
-    url:"",
+    id: 6,
+    github: "",
+    url: "",
     project: "Department of Animal Breeding And Genetics",
     image: abgAdmin,
   },
   {
-    id:7,
-    github:"",
-    url:"",
+    id: 7,
+    github: "",
+    url: "",
     project: "Department of Animal Breeding And Genetics",
     image: abgAdmin,
   },
   {
-    id:8,
-    github:"",
-    url:"",
+    id: 8,
+    github: "",
+    url: "",
     project: "Department of Animal Breeding And Genetics",
     image: abgAdmin,
   },
   {
-    id:9,
-    github:"",
-    url:"",
+    id: 9,
+    github: "",
+    url: "",
     project: "Department of Animal Breeding And Genetics",
     image: abgAdmin,
   },
@@ -134,7 +134,7 @@ export const GridBox = styled.div`
   margin-bottom: 25px;
 
   @media (max-width: 767px) {
-    grid-template-columns: auto; 
+    grid-template-columns: auto;
   }
 `;
 export const BoxInfo = styled.div`
@@ -142,14 +142,12 @@ export const BoxInfo = styled.div`
   display: flex;
   gap: 20px;
   height: 200px;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   padding: 20px;
 `;
 
-export const Title = styled.div`
-
-`;
+export const Title = styled.div``;
 
 export const Para = styled.div`
   font-size: 18px;
@@ -162,30 +160,29 @@ export const Amount = styled.div`
   font-weight: 700;
 `;
 export const Button = styled.button`
- background:blue;
- width:150px;
- color:white;
- border:none;
- border-radius:10px;
- display: flex;
- padding:15px 0px;
- justify-content:center;
- align-items: center;
+  background: blue;
+  width: 150px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  padding: 15px 0px;
+  justify-content: center;
+  align-items: center;
 `;
 export const Description = styled.div`
-color:black;
-font-size:12px;
-margin-top:10px;
+  color: black;
+  font-size: 12px;
+  margin-top: 10px;
 `;
 export const BtnDiv = styled.div`
-display: flex;
- justify-content:space-between;
- align-items: center;
- margin-top:20px;
- .-tools{
-
-  color:black;
- }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  .-tools {
+    color: black;
+  }
 `;
 
 export const ImgContainer = styled.div`
@@ -193,5 +190,4 @@ export const ImgContainer = styled.div`
     width: 52px;
     height: 52px;
   }
-  
 `;
