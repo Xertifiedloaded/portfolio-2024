@@ -1,0 +1,191 @@
+
+   .main {
+    padding: 20px;
+  }
+  
+  .skillBox {
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .skillBar {
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .skillPercent {
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .toolTip {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 12px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+.nodejs {
+    width: 0%;
+    background-color: blue;
+    animation: nodejsAnimation 1s ease-in-out forwards;
+    animation-delay: 0s;
+  }
+  
+  .postgresql {
+    width: 0%;
+    background-color: #336791;
+    animation: postgresqlAnimation 1s ease-in-out forwards;
+    animation-delay: 0.1s;
+  }
+  
+  .mongodb {
+    width: 0%;
+    background-color: #4db33d;
+    animation: mongodbAnimation 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+  }
+  
+  .react {
+    width: 0%;
+    background-color: #61dbfb;
+    animation: reactAnimation 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+  }
+  
+  .nextjs {
+    width: 0%;
+    background-color: cornflowerblue;
+    animation: nextjsAnimation 1s ease-in-out forwards;
+    animation-delay: 0.4s;
+  }
+  
+  .html {
+    width: 0%;
+    background-color: #f06529;
+    animation: htmlAnimation 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .vanillajs {
+    width: 0%;
+    background-color: #f0db4f;
+    animation: vanillajsAnimation 1s ease-in-out forwards;
+    animation-delay: 0.6s;
+  }
+  
+  .github {
+    width: 0%;
+    background-color: fuchsia;
+    animation: githubAnimation 1s ease-in-out forwards;
+    animation-delay: 0.7s;
+  }
+  
+  .css {
+    width: 0%;
+    background-color: #61dbfb;
+    animation: cssAnimation 1s ease-in-out forwards;
+    animation-delay: 0.8s;
+  }
+  
+  .vercel {
+    width: 0%;
+    background-color: red;
+    animation: vercelAnimation 1s ease-in-out forwards;
+    animation-delay: 0.9s;
+  }
+  
+  /* Animation keyframes */
+  @keyframes nodejsAnimation {
+    to {
+      width: 80%;
+    }
+  }
+  
+  @keyframes postgresqlAnimation {
+    to {
+      width: 80%;
+    }
+  }
+  
+  @keyframes mongodbAnimation {
+    to {
+      width: 80%;
+    }
+  }
+  
+  @keyframes reactAnimation {
+    to {
+      width: 90%;
+    }
+  }
+  
+  @keyframes nextjsAnimation {
+    to {
+      width: 90%;
+    }
+  }
+  
+  @keyframes htmlAnimation {
+    to {
+      width: 95%;
+    }
+  }
+  
+  @keyframes vanillajsAnimation {
+    to {
+      width: 85%;
+    }
+  }
+  
+  @keyframes githubAnimation {
+    to {
+      width: 90%;
+    }
+  }
+  
+  @keyframes cssAnimation {
+    to {
+      width: 95%;
+    }
+  }
+  
+  @keyframes vercelAnimation {
+    to {
+      width: 95%;
+    }
+  }
+  @media (max-width: 767px) {
+    .skillBar {
+        width: 100%;
+       height: 7px;
+      }
+      .toolTip{
+        font-size: 7px;
+      }
+}

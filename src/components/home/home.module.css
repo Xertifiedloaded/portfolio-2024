@@ -1,0 +1,50 @@
+.main {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+
+    .port {
+        h1 {
+            font-size: calc(4rem + 1vw);
+            text-align: center;
+        }
+
+        p {
+            margin-top: 30px;
+            font-size: calc(15px + 0.5vw);
+            letter-spacing: 2px;
+            line-height: 1.5;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .main {
+        .port {
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+   
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        .port {
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+   
+                font-size: 10px;
+            }
+        }
+    }
+}
