@@ -1,10 +1,14 @@
 import React from 'react'
-
-export default function Nav({ toggleMenu, menuOpen,isDesktop }) {
+import hamburger from '../../assets/hamburger.svg'
+import styles from './nav.module.css'
+export default function Nav({ toggleMenu, menuOpen, isDesktop }) {
   return (
- <>
-       {isDesktop ? null : <button onClick={toggleMenu}>{menuOpen ? "Hide Menu" : "Show Menu"}</button>}
-       <p>Nav</p>
- </>
+    <>
+      <nav >
+
+        {isDesktop ? null : <div  onClick={toggleMenu}>{menuOpen ? null : <img  src={hamburger} alt="" />}</div>}
+      </nav>
+
+    </>
   )
 }

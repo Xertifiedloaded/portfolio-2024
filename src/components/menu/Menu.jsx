@@ -3,11 +3,13 @@ import styles from "./menu.module.css";
 import user from "../../assets/user.svg";
 import { data } from "../../utils";
 import { Link } from "react-router-dom";
+
+import x from '../../assets/x.svg'
 export default function Menu({ toggleMenu, menuOpen,isDesktop }) {
   return (
     <>
       <main className={styles.main}>
-      {isDesktop ? null : <button onClick={toggleMenu}>{menuOpen ? "Hide Menu" : "Show Menu"}</button>}
+      {isDesktop ? null : <div className={styles.headerImg} onClick={toggleMenu}>{menuOpen ? <img src={x} alt="" /> : null}</div>}
         <div className={styles.user}>
           <img src={user} alt="ola" />
         </div>
@@ -15,7 +17,7 @@ export default function Menu({ toggleMenu, menuOpen,isDesktop }) {
           {data.map((items) => {
             return (
               <>
-                <Link to={items.path} key={items.id} className={styles.item}>
+                <Link onClick={toggleMenu} to={items.path} key={items.id} className={styles.item}>
                   <img src={items.image} alt="" />
                   <span>{items.name}</span>
                 </Link>
