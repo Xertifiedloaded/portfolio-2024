@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./menu.module.css";
-import user from "../../assets/user.svg";
+import user from "../../assets/image.jpeg";
 import { data } from "../../utils";
 import { Link } from "react-router-dom";
 
