@@ -16,12 +16,12 @@ export default function Menu({ toggleMenu, menuOpen,isDesktop }) {
         <div className={styles.itemMenu}>
           {data.map((items) => {
             return (
-              <>
-                <Link onClick={toggleMenu} to={items.path} key={items.id} className={styles.item}>
+          
+                <Link  target="_blank" onClick={toggleMenu} to={items.path} key={items.id} className={styles.item}>
                   <img src={items.image} alt="" />
                   <span>{items.name}</span>
                 </Link>
-              </>
+          
             );
           })}
         </div>

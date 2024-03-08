@@ -13,6 +13,7 @@ import Home from "./pages/home/Home";
 import Projects from "./pages/home/Projects";
 import Nav from "./components/nav/Nav";
 import Footer from "./components/footer/Footer";
+import Contact from "./pages/home/Contact";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -79,6 +80,10 @@ export default function App() {
         {
           path: "/projects",
           element: <Projects />,
+        },
+        {
+          path: "/mail",
+          element: <Contact/>,
         },
       ],
     },

@@ -1,9 +1,15 @@
 
    .main {
     padding: 20px;
-  }
   
+  }
+  .skills{
+    text-align: start;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
   .skillBox {
+  
     margin-bottom: 20px;
   }
   

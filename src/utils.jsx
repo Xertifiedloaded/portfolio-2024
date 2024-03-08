@@ -7,71 +7,7 @@ import sms from "./assets/email.svg";
 import github from "./assets/github.svg";
 import abgAdmin from "./assets/abg-admin.png";
 import pdf from "./assets/Updated CV 2024.pdf";
-export const projectsData = [
-  {
-    id: 1,
-    github: "",
-    url: "",
-    project: "Department of Animal Breeding And Genetics",
-    image: abgAdmin,
-  },
-  {
-    id: 2,
-    github: "",
-    url: "",
-    project: "Department of Animal Breeding And Genetics",
-    image: abgAdmin,
-  },
-  {
-    id: 3,
-    github: "",
-    url: "",
-    project: "Department of Animal Breeding And Genetics",
-    image: abgAdmin,
-  },
-  {
-    id: 4,
-    github: "",
-    url: "",
-    project: "Department of Animal Breeding And Genetics",
-    image: abgAdmin,
-  },
-  {
-    id: 5,
-    github: "",
-    url: "",
-    project: "Department of Animal Breeding And Genetics",
-    image: abgAdmin,
-  },
-  {
-    id: 6,
-    github: "",
-    url: "",
-    project: "Department of Animal Breeding And Genetics",
-    image: abgAdmin,
-  },
-  {
-    id: 7,
-    github: "",
-    url: "",
-    project: "Department of Animal Breeding And Genetics",
-    image: abgAdmin,
-  },
-  {
-    id: 8,
-    github: "",
-    url: "",
-    project: "Department of Animal Breeding And Genetics",
-    image: abgAdmin,
-  },
-  {
-    id: 9,
-    github: "",
-    url: "",
-    project: "Department of Animal Breeding And Genetics",
-    image: abgAdmin,
-  },
-];
+
 
 export const data = [
   {
@@ -106,14 +42,14 @@ export const data = [
   },
   {
     id: 6,
-    name: "Mail",
+    name: "Contact",
     path: "/mail",
     image: sms,
   },
   {
     id: 7,
     name: "CV",
-    path: "/cv",
+    path: "https://pdf.ac/ZLX0r",
     image: cv,
   },
 ];
@@ -143,15 +79,29 @@ export const BoxInfo = styled.div`
   gap: 20px;
   height: 200px;
   justify-content: center;
+  border:0.2px solid white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   align-items: center;
-  padding: 20px;
+  // padding: 20px;
+  
 `;
 
-export const Title = styled.div``;
+export const Title = styled.div`
+background-color: rgba(0, 0, 0, 0.5);
+width: 80%;
+padding:10px;
+border-radius:10px;
+margin:0 auto;
+
+`;
+
+
 
 export const Para = styled.div`
   font-size: 18px;
-  color: rgba(18, 18, 18, 1);
+  color:white;
+  text-transform: capitalize;
+  text-align:center;
   font-weight: 500;
 `;
 
@@ -181,7 +131,8 @@ export const BtnDiv = styled.div`
   align-items: center;
   margin-top: 20px;
   .-tools {
-    color: black;
+    color: white;
+    text-transform: capitalize;
   }
 `;
 

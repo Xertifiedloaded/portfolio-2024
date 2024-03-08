@@ -6,7 +6,7 @@ const Progress = () => {
   return (
     <>
       <div className={styles.main}>
-        <h1>Skills</h1>
+        <h1 className={styles.skills}>Skills</h1>
         <div className={styles.skillBox}>
           <span className={styles.title}>Node.js</span>
           <div className={`${styles.skillBar}`}>
