@@ -12,7 +12,7 @@ import Menu from "./components/menu/Menu";
 import Home from "./pages/home/Home";
 import Projects from "./pages/home/Projects";
 import Nav from "./components/nav/Nav";
-import Footer from "./components/footer/Footer";
+// import Footer from "./components/footer/Footer";
 import Contact from "./pages/home/Contact";
 
 export default function App() {
@@ -62,7 +62,7 @@ export default function App() {
             menuOpen={menuOpen}
           />
           <Outlet />
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </div>
     </div>
