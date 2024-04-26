@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import styles from './styles.module.css';
-import { toast } from 'react-toast'; // Importing toast from react-toast
+import styles from './emailjs.module.css';
+import toast from 'react-hot-toast'; // Importing toast from react-toast
 
 export default function ContactMe() {
     const URL = "https://portfolio-backend-hama.onrender.com/api/v1/email";
@@ -57,7 +57,6 @@ export default function ContactMe() {
         <>
             <div className={styles.form}>
                 <div className={styles.container}>
-                    <h2>Contact Me</h2>
                     <form onSubmit={handleSubmit}>
                         <div className={styles.formGroup}>
                             <label htmlFor="name">Name:</label>

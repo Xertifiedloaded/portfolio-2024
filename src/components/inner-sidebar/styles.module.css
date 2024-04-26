@@ -1,0 +1,99 @@
+.sidebarPage {
+  position: relative;
+  background: #121017;
+}
+
+.sidebar {
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100vh;
+
+  transition: width 0.4s;
+}
+.sidebarHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar.open {
+  width: 230px;
+}
+
+.sidebar .inner {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 25%);
+}
+
+.sidebar header {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 6px;
+  background: rgb(0 0 0 / 25%);
+}
+
+.sidebar-burger {
+  width: 44px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  color: #f9f9f9;
+}
+
+.sidebar header > img {
+  height: 28px;
+}
+
+.sidebar nav {
+  display: grid;
+  padding: 6px;
+  gap: 2px;
+}
+
+.sidebar nav > .sidebarBtn {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  font-family: "Poppins";
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 1;
+  padding: 0 12px;
+  border-radius: 8px;
+  color: #f9f9f9;
+}
+
+.sidebar nav > .sidebarBtn:hover {
+  background: rgb(0 0 0 / 30%);
+}
+
+.sidebar header > img,
+.sidebar nav > .sidebarBtn p {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.sidebar.open :is(nav .sidebarBtn p, header > img) {
+  opacity: 1;
+}
+
+.sidebar.open nav > .sidebarBtn {
+  width: 100%;
+}
+
+@media(width<=500px){
+  .sidebar{
+    padding: 0;
+  }
+  .sidebar.open {
+    width: 170px;
+  }
+
+}

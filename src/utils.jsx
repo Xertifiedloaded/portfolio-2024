@@ -5,8 +5,41 @@ import tweet from "./assets/twitter.svg";
 import linkedin from "./assets/linkedin.svg";
 import sms from "./assets/email.svg";
 import github from "./assets/github.svg";
-import abgAdmin from "./assets/abg-admin.png";
-import pdf from "./assets/Updated CV 2024.pdf";
+import call from "./assets/github.svg";
+import email from "./assets/github.svg";
+import mail from "./assets/github.svg";
+
+
+export const contactOptions = [
+  { label: "Call Me", image: call, link: "tel:+2348168043011" },
+  {
+    label: "Email Me",
+    image: email,
+    link: "mailto:makindeolaitan01@gmail.com",
+  },
+  {
+    label: "Follow on GitHub",
+    image: github,
+    link: "https://github.com/Xertifiedloaded",
+  },
+  {
+    label: "Follow on LinkedIn",
+    image: linkedin,
+    link: "https://www.linkedin.com/in/makinde-olaitan-43177a290",
+  },
+  {
+    label: "makindeolaitan01@gmail.com",
+    image: mail,
+    link: "makindeolaitan01@gmail.com",
+  },
+];
+
+
+
+
+
+
+
 
 
 export const data = [

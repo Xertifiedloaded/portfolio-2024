@@ -1,0 +1,66 @@
+.contact {
+    color: hsl(240, 4%, 41%);
+
+    h1 {
+        /* font-size: 35px; */
+        margin: 20px 0;
+        font-family: "Dancing Script", cursive;
+        font-weight: 700;
+        color: rgb(0 27 94 / 1);
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        padding: 30px 0 2px;
+        text-transform: capitalize;
+    }
+
+    p {
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .contactUs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: self-start;
+        justify-content: space-between;
+
+
+
+        .social_connection {
+            font-size: 14px;
+            font-weight: 600;
+            flex: 1;
+
+            .social_List {
+                display: flex;
+                color: #65656d;
+                gap: 10px;
+                margin: 30px 0;
+                align-items: center;
+
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+
+            }
+        }
+        .email{
+            flex: 1;
+            width: 100%;
+        }
+    }
+}
+@media (width<768px){
+    .contact {
+      
+    
+        .contactUs {
+         display: block;
+    
+            .email{
+                width: 100%;
+            }
+        }
+    }
+}

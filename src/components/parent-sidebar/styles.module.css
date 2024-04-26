@@ -1,0 +1,116 @@
+.btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar {
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  border-right: 1px solid #2e303e;
+  transition: width 0.4s;
+}
+
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding: 0 1.25rem 0 0;
+  border-bottom: 1px solid #2e303e;
+  color: #e1ecff;
+}
+
+.sidebar .sidebarHeader .btn {
+  width: 54px;
+}
+
+.sidebar-logo {
+  height: 20px;
+}
+
+.sidebar .btn {
+  position: relative;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0 8px;
+  color: #e1ecff;
+  transition: background 0.3s;
+}
+
+.sidebar .btn span:nth-child(2) {
+  flex: 1 1 auto;
+}
+
+.sidebar .btn:is(.active, :hover) {
+  background: #004fee;
+  color: #e1ecff;
+}
+
+.sidebar .btn span {
+  transition: 0.3s;
+}
+
+.sidebar .btn.active>span:nth-child(3) {
+  rotate: -180deg;
+}
+
+.sidebar .btn:not(.active):hover {
+  background: #2e303e;
+}
+
+.subNav .btn.active::before {
+  background: #e1ecff;
+}
+
+.subNav {
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.subNav.open {
+  height: 200px;
+}
+
+.subNav .btn {
+  padding-left: 54px;
+}
+
+.subNav .btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  translate: 0 -50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #e1ecff;
+}
+
+.material {
+  font-size: 22px;
+  width: 10px;
+  height: 10px;
+
+}
+
+@media(width<=500px) {
+
+  .sidebar .btn {
+    font-size: 15px;
+  }
+
+}

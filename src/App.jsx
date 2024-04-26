@@ -8,61 +8,38 @@ import {
   Navigate,
 } from "react-router-dom";
 
-import Menu from "./components/menu/Menu";
 import Home from "./pages/home/Home";
-import Projects from "./pages/home/Projects";
+
 import Nav from "./components/nav/Nav";
-// import Footer from "./components/footer/Footer";
-import Contact from "./pages/home/Contact";
+
+
+import { Sidebar2 } from "./components/inner-sidebar/InnerSidebar";
+import ContactUS from "./pages/contact/Contact";
+import Article from "./pages/article/Article";
+import SingleArticle from "./components/single-article/SingleArticle";
+import Projects from "./pages/projects/Projects";
+
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768); // Assuming 768px as breakpoint for desktop
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768); 
 
-  const toggleMenu = () => {
-    if (!isDesktop) {
-      setMenuOpen(!menuOpen);
-    }
-  };
 
-  const closeMenu = () => {
-    if (!isDesktop) {
-      setMenuOpen(false);
-    }
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth > 768);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   const Layout = () => (
     <div className="main">
       <div className="container">
         <div
           className="menuContainer"
-          style={{ display: isDesktop || menuOpen ? "block" : "none" }}
+          // style={{ display: isDesktop || menuOpen ? "block" : "none" }}
         >
-          <Menu
-            isDesktop={isDesktop}
-            toggleMenu={toggleMenu}
-            menuOpen={menuOpen}
-          />
+      
+          <Sidebar2/>
         </div>
         <div className="contentContainer">
-          <Nav
-            isDesktop={isDesktop}
-            toggleMenu={toggleMenu}
-            menuOpen={menuOpen}
-          />
+      
           <Outlet />
-          {/* <Footer /> */}
+
         </div>
       </div>
     </div>
@@ -79,11 +56,19 @@ export default function App() {
         },
         {
           path: "/projects",
-          element: <Projects />,
+          element: <Projects/>,
         },
         {
-          path: "/mail",
-          element: <Contact/>,
+          path: "/contact",
+          element: <ContactUS/>,
+        },
+        {
+          path: "/article",
+          element: <Article/>,
+        },
+        {
+          path: "/article/:slug",
+          element: <SingleArticle/>,
         },
       ],
     },
@@ -91,3 +76,45 @@ export default function App() {
 
   return <RouterProvider router={router}></RouterProvider>;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // const toggleMenu = () => {
+  //   if (!isDesktop) {
+  //     setMenuOpen(!menuOpen);
+  //   }
+  // };
+
+  // const closeMenu = () => {
+  //   if (!isDesktop) {
+  //     setMenuOpen(false);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsDesktop(window.innerWidth > 768);
+  //   };
+
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
